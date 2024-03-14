@@ -1,0 +1,39 @@
+body {
+    margin-left: 200px;
+    height: 1000px;
+    width: 500px;
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* Define grid areas */
+    grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd hd"
+        "wo wo wo wo wo wo wo wo wo wo"
+        "cn cn cn cn cn cn cn cn cn cn"
+        "cn cn cn cn cn cn cn cn cn cn"
+        "cn cn cn cn cn cn cn cn cn cn";
+}
+
+header {
+    grid-area: hd;
+}
+
+li {
+    grid-area: cn;
+}
+
+/* Remove bullet points from list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Remove underlines from links */
+li a {
+    text-decoration: none;
+    color: black;
+}
+h2{
+    grid-area: wo;
+}
