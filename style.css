@@ -23,7 +23,13 @@
     grid-area: header;
   }
   
-  .bodyy { grid-area: bodyy; }
+  .bodyy { grid-area: bodyy; 
+border: solid 1px;
+border-color: black;
+padding: 10px 10px  10px  10px ;
+
+}
+
   
   .btn{
 
