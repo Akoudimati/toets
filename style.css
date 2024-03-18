@@ -1,39 +1,32 @@
-body {
-    margin-left: 200px;
-    height: 1000px;
-    width: 500px;
-    display: grid;
+.container {  display: grid;
+    grid-template-columns: 1.1fr 0.9fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.1fr 1.4fr 1fr;
     gap: 10px 10px;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    /* Define grid areas */
-    grid-template-areas: 
-        "hd hd hd hd hd hd hd hd hd hd"
-        "wo wo wo wo wo wo wo wo wo wo"
-        "cn cn cn cn cn cn cn cn cn cn"
-        "cn cn cn cn cn cn cn cn cn cn"
-        "cn cn cn cn cn cn cn cn cn cn";
-}
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header header"
+      ". bodyy bodyy bodyy ."
+      ". bodyy bodyy bodyy ."
+      ". . . . .";
+  }
+  
+  .header {  display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    background-color: black;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . .  "
+      " bt bt bt "
+      ". . . ";
+    grid-area: header;
+  }
+  
+  .bodyy { grid-area: bodyy; }
+  
+  .btn{
 
-header {
-    grid-area: hd;
-}
+    grid-area: bt;
 
-li {
-    grid-area: cn;
-}
-
-/* Remove bullet points from list */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-/* Remove underlines from links */
-li a {
-    text-decoration: none;
-    color: black;
-}
-h2{
-    grid-area: wo;
-}
+  }
