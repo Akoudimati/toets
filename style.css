@@ -5,9 +5,10 @@
     grid-auto-flow: row;
     grid-template-areas:
       "header header header header header"
+      ". . . . ."
       ". bodyy bodyy bodyy ."
       ". bodyy bodyy bodyy ."
-      ". . . . .";
+      ;
   }
   
   .header {  display: grid;
@@ -24,9 +25,7 @@
   }
   
   .bodyy { grid-area: bodyy; 
-    border: solid 1px;
-    border-color: black;
-    padding: 10px 10px  10px  10px ;
+    
 
 }
 
@@ -35,13 +34,18 @@
 
     grid-area: bt;
     margin-left: 30px;
-
+color: aliceblue;
 
   }
 .btn a{
   text-decoration: none; 
   padding: 10px 10px 10px 10px;
+  background-color: antiquewhite;
 }
 .btn1{
   margin-left: 80%;
+}
+
+fieldset {
+    border: 1px solid #000;
 }
