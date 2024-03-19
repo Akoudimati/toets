@@ -1,5 +1,5 @@
 .container {  display: grid;
-    grid-template-columns: 1.1fr 0.9fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1.1fr 1.4fr 1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
@@ -19,33 +19,72 @@
     grid-auto-flow: row;
     grid-template-areas:
       ". . .  "
-      " bt bt bt "
+      " bt bt bt"
       ". . . ";
     grid-area: header;
   }
   
-  .bodyy { grid-area: bodyy; 
+  .bodyy { grid-area: bodyy;
+  
     
 
 }
+
 
   
   .btn {
 
     grid-area: bt;
     margin-left: 30px;
-color: aliceblue;
+    
+
 
   }
 .btn a{
   text-decoration: none; 
   padding: 10px 10px 10px 10px;
-  background-color: antiquewhite;
+
 }
 .btn1{
-  margin-left: 80%;
+margin-left: 45%;
+
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+
 }
+ .btn1:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+ }
+ 
+ @keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 #05bada66;
+  }
+ 
+  70% {
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+ 
+  100% {
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+ }
+
 
 fieldset {
     border: 1px solid #000;
+ 
+
+}
+form{
+  margin: 30px;
 }
