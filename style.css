@@ -56,6 +56,10 @@ margin-left: 45%;
   font-family: inherit;
   font-size: 17px;
   padding: 0.6em 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 
 }
  .btn1:hover {
